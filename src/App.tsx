@@ -8,6 +8,7 @@ import { ProjectCard } from "./components/ProjectCard";
 import type { Project } from "./types/Project";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa6";
 import { SiCodeberg } from "react-icons/si";
+import { MdEmail } from "react-icons/md";
 
 function App() {
   const data = DATA_EN;
@@ -82,6 +83,14 @@ function App() {
       <footer className="flex border-t border-stone-200 items-center justify-between py-4">
         <small className="text-stone-400">© 2026</small>
         <div className="flex items-center gap-4">
+          <a
+            href="mailto:guille.mena@protonmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-stone-700"
+          >
+            <MdEmail className="w-5 h-5" />
+          </a>
           <a
             href="https://linkedin.com/in/menito"
             target="_blank"
