@@ -9,7 +9,7 @@ export const DATA_ES = {
       <ColoredText label="desarrollador frontend" />
       con 5 años de experiencia profesional, especializado en{" "}
       <ColoredText label="React" variant="orange" />,
-      <ColoredText label="TypeScript" variant="green" /> y{" "}
+      <ColoredText label="TypeScript" variant="emerald" /> y{" "}
       <ColoredText label="JavaScript" variant="blue" />, y con experiencia
       previa en desarrollo de videojuegos con Unity.
       <br />

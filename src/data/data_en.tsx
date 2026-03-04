@@ -33,7 +33,7 @@ export const DATA_EN = {
       <ColoredText label="frontend developer" />
       with 5 years of professional experience, specializing in{" "}
       <ColoredText label="React" variant="orange" />,
-      <ColoredText label="TypeScript" variant="green" /> and{" "}
+      <ColoredText label="TypeScript" variant="emerald" /> and{" "}
       <ColoredText label="JavaScript" variant="blue" />, and with previous
       experience in game development with Unity.
       <br />
@@ -46,22 +46,26 @@ export const DATA_EN = {
     {
       title: "CV",
       icon: <IoDocumentText />,
-      url: "https://google.es/",
+      url: "https://drive.proton.me/urls/MWPD5ASFMM#dHGSHgOjK4xK",
+      variant: "rose",
     },
     {
       title: "Email",
       icon: <MdEmail />,
       url: "mailto:guille.mena@protonmail.com",
+      variant: "violet",
     },
     {
       title: "LinkedIn",
       icon: <FaLinkedinIn />,
       url: "https://linkedin.com/in/menito",
+      variant: "blue",
     },
     {
       title: "Codeberg",
       icon: <SiCodeberg />,
       url: "https://codeberg.org/menito",
+      variant: "emerald",
     },
   ],
   work: {

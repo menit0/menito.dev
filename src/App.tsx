@@ -10,6 +10,7 @@ import { FaGithub, FaLinkedinIn } from "react-icons/fa6";
 import { SiCodeberg } from "react-icons/si";
 import { MdEmail } from "react-icons/md";
 import { TagButton } from "./components/TagButton";
+import type { ColorVariant } from "./types/ColorVariant";
 
 function App() {
   const data = DATA_EN;
@@ -35,7 +36,13 @@ function App() {
         {data.summary}
         <div className="flex flex-wrap gap-3">
           {data.links.map((link) => (
-            <TagButton icon={link.icon} label={link.title} url={link.url} />
+            <TagButton
+              key={link.title}
+              icon={link.icon}
+              label={link.title}
+              url={link.url}
+              variant={link.variant as ColorVariant}
+            />
           ))}
         </div>
       </section>

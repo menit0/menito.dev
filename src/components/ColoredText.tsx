@@ -1,11 +1,4 @@
-type ColorVariant =
-  | "amber"
-  | "blue"
-  | "rose"
-  | "green"
-  | "purple"
-  | "yellow"
-  | "orange";
+import type { ColorVariant } from "../types/ColorVariant";
 
 type ColoredTextProps = {
   label: string;
@@ -17,8 +10,8 @@ export const ColoredText = ({ label, variant = "amber" }: ColoredTextProps) => {
     amber: { bg: "bg-amber-100/50", text: "text-amber-900" },
     blue: { bg: "bg-blue-100/50", text: "text-blue-900" },
     rose: { bg: "bg-rose-100/50", text: "text-rose-900" },
-    green: { bg: "bg-green-100/50", text: "text-green-900" },
-    purple: { bg: "bg-purple-100/50", text: "text-purple-900" },
+    emerald: { bg: "bg-emerald-100/50", text: "text-emerald-900" },
+    violet: { bg: "bg-violet-100/50", text: "text-violet-900" },
     yellow: { bg: "bg-yellow-100/50", text: "text-yellow-900" },
     orange: { bg: "bg-orange-100/50", text: "text-orange-900" },
   };
