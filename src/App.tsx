@@ -6,7 +6,7 @@ import type { Experience } from "./types/Experience";
 import avatar from "./assets/avatar.jpg";
 import { ProjectCard } from "./components/ProjectCard";
 import type { Project } from "./types/Project";
-import { FaGithub, FaLinkedinIn } from "react-icons/fa6";
+import { FaLinkedinIn } from "react-icons/fa6";
 import { SiCodeberg } from "react-icons/si";
 import { MdEmail } from "react-icons/md";
 import { TagButton } from "./components/TagButton";
@@ -108,14 +108,6 @@ function App() {
             className="hover:text-stone-700"
           >
             <FaLinkedinIn className="w-5 h-5" />
-          </a>
-          <a
-            href="https://github.com/guillermomena"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-stone-700"
-          >
-            <FaGithub className="w-5 h-5" />
           </a>
           <a
             href="https://codeberg.org/menito"
