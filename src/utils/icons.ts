@@ -22,6 +22,10 @@ import { FaSass } from "react-icons/fa6";
 import { SiReactrouter } from "react-icons/si";
 import { SiVitest } from "react-icons/si";
 import { GiBearFace } from "react-icons/gi";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa6";
+import { SiCodeberg } from "react-icons/si";
+import { MdEmail } from "react-icons/md";
+import { IoDocumentText } from "react-icons/io5";
 
 export const icons = {
   javascript: IoLogoJavascript,
@@ -48,4 +52,9 @@ export const icons = {
   sass: FaSass,
   reactrouter: SiReactrouter,
   vitest: SiVitest,
+  codeberg: SiCodeberg,
+  github: FaGithub,
+  linkedin: FaLinkedinIn,
+  email: MdEmail,
+  cv: IoDocumentText,
 };

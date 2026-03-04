@@ -9,6 +9,7 @@ import type { Project } from "./types/Project";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa6";
 import { SiCodeberg } from "react-icons/si";
 import { MdEmail } from "react-icons/md";
+import { TagButton } from "./components/TagButton";
 
 function App() {
   const data = DATA_EN;
@@ -32,6 +33,15 @@ function App() {
           <p className="font-medium text-rose-600">{data.about}</p>
         </div>
         {data.summary}
+        <div className="flex flex-wrap gap-3">
+          {data.links.map((link) => (
+            <TagButton
+              iconName={link.title.toLowerCase().replace(/\s+/g, "")}
+              label={link.title}
+              url={link.url}
+            />
+          ))}
+        </div>
       </section>
 
       <section className="flex flex-col gap-6">

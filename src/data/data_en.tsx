@@ -18,6 +18,24 @@ export const DATA_EN = {
       downloads.
     </p>
   ),
+  links: [
+    {
+      title: "CV",
+      url: "https://google.es/",
+    },
+    {
+      title: "Email",
+      url: "mailto:guille.mena@protonmail.com",
+    },
+    {
+      title: "LinkedIn",
+      url: "https://linkedin.com/in/menito",
+    },
+    {
+      title: "Codeberg",
+      url: "https://codeberg.org/menito",
+    },
+  ],
   work: {
     sectionName: "Work Experience",
     items: [
