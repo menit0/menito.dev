@@ -35,11 +35,7 @@ function App() {
         {data.summary}
         <div className="flex flex-wrap gap-3">
           {data.links.map((link) => (
-            <TagButton
-              iconName={link.title.toLowerCase().replace(/\s+/g, "")}
-              label={link.title}
-              url={link.url}
-            />
+            <TagButton icon={link.icon} label={link.title} url={link.url} />
           ))}
         </div>
       </section>
@@ -64,10 +60,7 @@ function App() {
         <h2>{data.skills.sectionName}</h2>
         <div className="flex flex-wrap gap-2">
           {data.skills.items.map((item) => (
-            <Tag
-              iconName={item.toLowerCase().replace(/\s+/g, "")}
-              label={item}
-            />
+            <Tag icon={item.icon} label={item.name} />
           ))}
         </div>
       </section>

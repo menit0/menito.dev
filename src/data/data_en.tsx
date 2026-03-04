@@ -1,4 +1,28 @@
+import { IoDocumentText } from "react-icons/io5";
 import { ColoredText } from "../components/ColoredText";
+import { MdEmail } from "react-icons/md";
+import { FaLinkedinIn } from "react-icons/fa6";
+import { SiCodeberg } from "react-icons/si";
+import { IoLogoJavascript } from "react-icons/io5";
+import { FaUnity } from "react-icons/fa6";
+import { SiTypescript } from "react-icons/si";
+import { FaReact, FaSass } from "react-icons/fa";
+import { FaHtml5 } from "react-icons/fa";
+import { FaCss3Alt } from "react-icons/fa";
+import { SiDart } from "react-icons/si";
+import { FaFlutter } from "react-icons/fa6";
+import { PiFileCSharp } from "react-icons/pi";
+import { RiTailwindCssFill } from "react-icons/ri";
+import { SiRedux } from "react-icons/si";
+import { SiJest } from "react-icons/si";
+import { SiTestinglibrary } from "react-icons/si";
+import { SiCypress } from "react-icons/si";
+import { SiWebpack } from "react-icons/si";
+import { SiVite } from "react-icons/si";
+import { SiJirasoftware } from "react-icons/si";
+import { FaGitAlt } from "react-icons/fa";
+import { SiVitest } from "react-icons/si";
+import { GiBearFace } from "react-icons/gi";
 
 export const DATA_EN = {
   name: "Guillermo Mena",
@@ -21,18 +45,22 @@ export const DATA_EN = {
   links: [
     {
       title: "CV",
+      icon: <IoDocumentText />,
       url: "https://google.es/",
     },
     {
       title: "Email",
+      icon: <MdEmail />,
       url: "mailto:guille.mena@protonmail.com",
     },
     {
       title: "LinkedIn",
+      icon: <FaLinkedinIn />,
       url: "https://linkedin.com/in/menito",
     },
     {
       title: "Codeberg",
+      icon: <SiCodeberg />,
       url: "https://codeberg.org/menito",
     },
   ],
@@ -91,27 +119,90 @@ export const DATA_EN = {
   skills: {
     sectionName: "Skills",
     items: [
-      "React",
-      "JavaScript",
-      "TypeScript",
-      "HTML",
-      "CSS",
-      "Sass",
-      "Tailwind CSS",
-      "Redux",
-      "Zustand",
-      "Vitest",
-      "Jest",
-      "Testing Library",
-      "Cypress",
-      "Git",
-      "Vite",
-      "Webpack",
-      "Jira",
-      "Flutter",
-      "Dart",
-      "Unity",
-      "C#",
+      {
+        name: "React",
+        icon: <FaReact />,
+      },
+      {
+        name: "JavaScript",
+        icon: <IoLogoJavascript />,
+      },
+      {
+        name: "TypeScript",
+        icon: <SiTypescript />,
+      },
+      {
+        name: "HTML",
+        icon: <FaHtml5 />,
+      },
+      {
+        name: "CSS",
+        icon: <FaCss3Alt />,
+      },
+      {
+        name: "Sass",
+        icon: <FaSass />,
+      },
+      {
+        name: "Tailwind CSS",
+        icon: <RiTailwindCssFill />,
+      },
+      {
+        name: "Redux",
+        icon: <SiRedux />,
+      },
+      {
+        name: "Zustand",
+        icon: <GiBearFace />,
+      },
+      {
+        name: "Vitest",
+        icon: <SiVitest />,
+      },
+      {
+        name: "Jest",
+        icon: <SiJest />,
+      },
+      {
+        name: "Testing Library",
+        icon: <SiTestinglibrary />,
+      },
+      {
+        name: "Cypress",
+        icon: <SiCypress />,
+      },
+      {
+        name: "Git",
+        icon: <FaGitAlt />,
+      },
+      {
+        name: "Vite",
+        icon: <SiVite />,
+      },
+      {
+        name: "Webpack",
+        icon: <SiWebpack />,
+      },
+      {
+        name: "Jira",
+        icon: <SiJirasoftware />,
+      },
+      {
+        name: "Flutter",
+        icon: <FaFlutter />,
+      },
+      {
+        name: "Dart",
+        icon: <SiDart />,
+      },
+      {
+        name: "Unity",
+        icon: <FaUnity />,
+      },
+      {
+        name: "C#",
+        icon: <PiFileCSharp />,
+      },
     ],
   },
   mainProjects: {
