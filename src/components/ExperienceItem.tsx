@@ -18,7 +18,12 @@ export const ExperienceItem = ({ item }: ExperienceItemProps) => {
           )}
           <div>
             <h4>{item.title}</h4>
-            <a href={item.place.url} target="_blank" rel="noopener noreferrer">
+            <a
+              className="hover:text-stone-700"
+              href={item.place.url}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               {item.place.name}
             </a>
           </div>
