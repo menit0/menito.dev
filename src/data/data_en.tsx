@@ -30,11 +30,11 @@ export const DATA_EN = {
   summary: (
     <p className="leading-relaxed">
       I'm a
-      <ColoredText label="frontend developer" />
+      <ColoredText label="frontend developer" variant="rose" />
       with 5 years of professional experience, specializing in{" "}
-      <ColoredText label="React" variant="orange" />,
+      <ColoredText label="React" variant="violet" />,
       <ColoredText label="TypeScript" variant="emerald" /> and{" "}
-      <ColoredText label="JavaScript" variant="blue" />, and with previous
+      <ColoredText label="JavaScript" variant="yellow" />, and with previous
       experience in game development with Unity.
       <br />
       I'm also dedicated to independent development of mobile applications with{" "}
@@ -100,7 +100,7 @@ export const DATA_EN = {
           name: "Freelance",
           url: null,
         },
-        icon: "sngular.jpeg",
+        icon: "freelance.jpg",
         description:
           "Developed tailored interactive applications for diverse industries, optimizing multiplatform performance and loading times. Integrated Photon Engine for 3D multiplayer social spaces and provided post-delivery technical support and tuning.",
       },
