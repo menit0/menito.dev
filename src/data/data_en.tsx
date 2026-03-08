@@ -36,9 +36,10 @@ export const DATA_EN = {
       <ColoredText label="React" variant="violet" />,
       <ColoredText label="JavaScript" variant="yellow" /> and{" "}
       <ColoredText label="TypeScript" variant="emerald" />, and with previous
-      experience in game development with Unity.
+      experience in game and interactive application development with Unity.
       <br />
-      I'm also dedicated to independent development of mobile applications with{" "}
+      I'm also dedicated to independent development of{" "}
+      <ColoredText label="mobile" variant="amber" /> applications with{" "}
       <ColoredText label="Flutter" variant="blue" />, now exceeding 370,000
       downloads.
     </p>
