@@ -29,12 +29,13 @@ export const DATA_EN = {
   about: "Frontend Developer from Madrid, Spain",
   summary: (
     <p className="leading-relaxed">
-      I'm a
-      <ColoredText label="frontend developer" variant="rose" />
-      with 5 years of professional experience, specializing in{" "}
+      Developer with
+      <ColoredText label="5+ years" variant="rose" />
+      of professional experience, specializing in{" "}
+      <ColoredText label="frontend" variant="orange" /> development with{" "}
       <ColoredText label="React" variant="violet" />,
-      <ColoredText label="TypeScript" variant="emerald" /> and{" "}
-      <ColoredText label="JavaScript" variant="yellow" />, and with previous
+      <ColoredText label="JavaScript" variant="yellow" /> and{" "}
+      <ColoredText label="TypeScript" variant="emerald" />, and with previous
       experience in game development with Unity.
       <br />
       I'm also dedicated to independent development of mobile applications with{" "}
