@@ -218,14 +218,24 @@ export const DATA_EN = {
         name: "Inditex Back Office",
         thumbnail: "project_inditex.png",
         url: "https://inditex.com",
+        date: "Jul 2024 - Present",
         description:
           "Worked on front-end features and interfaces aimed to improve an Inditex internal platform, used to manage all payments made in Inditex online stores worldwide.",
-        skills: ["React", "JavaScript", "Redux", "Vitest", "Cypress"],
+        skills: [
+          "React",
+          "JavaScript",
+          "Redux",
+          "HTML",
+          "Sass",
+          "Vitest",
+          "Cypress",
+        ],
       },
       {
         name: "Real Madrid Museum",
         thumbnail: "project_realmadrid.png",
         url: "https://realmadrid.com/sites/tour-bernabeu",
+        date: "Apr 2023 - Jul 2024",
         description:
           "Developed interactives and VR experiences for the official Real Madrid Museum. My work also focused on create reusable components to streamline team development.",
         skills: ["Unity", "C#"],
@@ -234,6 +244,7 @@ export const DATA_EN = {
         name: "Qatar Olympic and Sports Museum",
         thumbnail: "project_qatar.png",
         url: "https://sngular.com/success-stories/11/faster-taller-stronger-and-more-innovative",
+        date: "Feb 2021 - Oct 2022",
         description:
           "Main programmer of interactives for the Qatar Olympic and Sports Museum, including 3D minigames, motion detection with Kinect and information touch panels.",
         skills: ["Unity", "C#"],
@@ -242,6 +253,7 @@ export const DATA_EN = {
         name: "SABIC Digital Experience Center",
         thumbnail: "project_sabic.png",
         url: "https://sabic.com/en",
+        date: "Oct 2022 - Apr 2023",
         description:
           "Main programmer of multi-device interactives for the main headquarters of SABIC, the largest company in the Middle East.",
         skills: ["Unity", "C#"],
@@ -250,6 +262,7 @@ export const DATA_EN = {
         name: "Exhibify",
         thumbnail: "project_exhibify.png",
         url: "https://exhibify.net",
+        date: "Aug 2021 - Mar 2022",
         description:
           "Developed a tool to easily create virtual art exhibitions, used by artists and art galleries to exhibit or sell their work. A project commissioned by ITGallery Software.",
         skills: ["Unity", "C#"],
@@ -258,6 +271,7 @@ export const DATA_EN = {
         name: "Color Rush",
         thumbnail: "project_naolito.png",
         url: "https://naolito.com",
+        date: "May 2022 - Jul 2022",
         description:
           "A 2D runner game commissioned by Naolito Animation Studios. Worked on a playable prototype, including all main mechanics and a level editor.",
         skills: ["Unity", "C#"],
@@ -266,6 +280,7 @@ export const DATA_EN = {
         name: "Uttopion",
         thumbnail: "project_uttopion.png",
         url: "https://uttopion.es",
+        date: "Feb 2021 - Dec 2021",
         description:
           "Worked on adding multiplayer features and content updates for Uttopion, a metaverse where users can attend online events organized by real artists.",
         skills: ["Unity", "C#", "Photon"],
@@ -274,6 +289,7 @@ export const DATA_EN = {
         name: "TodoLibros3D",
         thumbnail: "project_todolibros3d.png",
         url: "https://todolibros3d.com",
+        date: "Feb 2022 - Mar 2022",
         description:
           "Added multiplayer functionality to TodoLibros3D, a virtual bookstore where now users could create their own custom avatar, interact with other users and create their own private rooms to invite their friends.",
         skills: ["Unity", "C#", "Photon"],
@@ -287,6 +303,7 @@ export const DATA_EN = {
         name: "WattLuz",
         thumbnail: "project_wattluz.png",
         url: "https://play.google.com/store/apps/details?id=com.menito.precioluz",
+        date: "2024",
         description:
           "Mobile app that allows you to see daily prices of electricity in Spain in real time to help you save on your electricity bills.",
         skills: ["Flutter", "Dart"],
@@ -295,6 +312,7 @@ export const DATA_EN = {
         name: "Nanito Launcher",
         thumbnail: "project_nanitolauncher.png",
         url: "https://play.google.com/store/apps/details?id=com.menito.minimallauncher",
+        date: "2024",
         description:
           "Minimalist launcher for Android designed to reduce screen time and help you in your digital detox.",
         skills: ["Flutter", "Dart"],
@@ -303,6 +321,7 @@ export const DATA_EN = {
         name: "Chupito",
         thumbnail: "project_chupito.png",
         url: "https://play.google.com/store/apps/details?id=com.menito.appcohol",
+        date: "2020",
         description:
           "Party games app with challenges, funny questions and multiple game modes. My most stupid and at the same time most successful project, with +370,000 downloads.",
         skills: ["Flutter", "Dart", "Unity", "C#"],
@@ -311,6 +330,7 @@ export const DATA_EN = {
         name: "Pincho.io",
         thumbnail: "project_pinchoio.png",
         url: "https://youtube.com/watch?v=eDQVwSZA6f0",
+        date: "2019",
         description:
           "Mobile game inspired by Agar.io and launched in 2019, reaching +5,000 downloads. Currently unpublished due to maintenance constraints.",
         skills: ["Unity", "C#"],

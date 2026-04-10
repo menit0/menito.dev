@@ -19,17 +19,21 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
         <img
           src={`../assets/${project.thumbnail}`}
           className="rounded-lg h-30 object-cover"
+          alt={project.name}
         />
-        <div className="inline-flex justify-between items-center">
-          <div className="inline-flex gap-1 items-center">
-            <h3>{project.name}</h3>
-            <HiMiniArrowUpRight className="h-4 w-4 opacity-0 transition-all duration-300 group-hover:opacity-100" />
+        <div className="inline-flex flex-col">
+          <div className="inline-flex justify-between items-center">
+            <div className="inline-flex gap-1 items-center">
+              <h3>{project.name}</h3>
+              <HiMiniArrowUpRight className="h-4 w-4 opacity-0 transition-all duration-300 group-hover:opacity-100" />
+            </div>
+            {project.code && (
+              <a href={project.code}>
+                <FaGithub size={20} />
+              </a>
+            )}
           </div>
-          {project.code && (
-            <a href={project.code}>
-              <FaGithub size={20} />
-            </a>
-          )}
+          <small className="text-stone-400">{project.date}</small>
         </div>
         <p className="text-sm leading-relaxed">
           {project.description.split("\n").map((line, i) => (
