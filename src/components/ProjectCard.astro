@@ -1,0 +1,55 @@
+---
+import type { Project } from "src/types/Project";
+import ArrowUpRightIcon from "./icons/ArrowUpRightIcon.astro";
+import SkillTag from "./SkillTag.astro";
+
+const { project } = Astro.props;
+
+interface Props {
+  project: Project;
+}
+---
+
+<a
+  href={project.url}
+  target="_blank"
+  rel="noopener noreferrer"
+  class="group inline-flex flex-col justify-between border border-stone-200 dark:border-zinc-700 rounded-xl p-2 gap-4 hover:shadow-lg hover:shadow-rose-100 hover:border-rose-300 hover:dark:shadow-rose-400/10 hover:dark:border-rose-300/60 transition-all duration-300"
+>
+  <div class="flex flex-col gap-2">
+    <img
+      src={`../${project.thumbnail}`}
+      class="rounded-lg h-30 object-cover"
+      alt={project.name}
+    />
+    <div class="flex flex-col">
+      <div class="inline-flex gap-1 items-center">
+        <h4>{project.name}</h4>
+        <ArrowUpRightIcon
+          class="h-4 w-4 opacity-0 transition-all duration-300 group-hover:opacity-100 text-rose-400"
+        />
+      </div>
+
+      <small class="text-stone-400 dark:text-stone-500">{project.date}</small>
+    </div>
+    <p class="text-sm leading-relaxed">
+      {
+        project.description.split("\n").map((line, i) => (
+          <span>
+            {line}
+            <br />
+          </span>
+        ))
+      }
+    </p>
+  </div>
+  <div class="flex flex-wrap gap-1">
+    {
+      project.skills?.map((skill) => (
+        <div class="text-xs">
+          <SkillTag label={skill} />
+        </div>
+      ))
+    }
+  </div>
+</a>

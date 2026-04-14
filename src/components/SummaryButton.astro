@@ -1,0 +1,13 @@
+---
+const { href, label, colorClass, icon: Icon } = Astro.props;
+---
+
+<a
+  class={`inline-flex items-center gap-2 px-2 py-1 text-sm font-medium rounded-lg bg-stone-100 dark:bg-zinc-800 border border-stone-200 dark:border-zinc-700 transition-all duration-300 ${colorClass}`}
+  href={href}
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  {Icon && <Icon />}
+  <span>{label}</span>
+</a>

@@ -1,0 +1,275 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "summary": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "links": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "label": {
+                "type": "string"
+              },
+              "url": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "label",
+              "url"
+            ]
+          }
+        }
+      },
+      "required": [
+        "name",
+        "title",
+        "description",
+        "links"
+      ]
+    },
+    "work": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "experiences": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "title": {
+                "type": "string"
+              },
+              "date": {
+                "type": "string"
+              },
+              "place": {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "type": "string"
+                  },
+                  "url": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "name",
+                  "url"
+                ]
+              },
+              "icon": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "title",
+              "date",
+              "place",
+              "icon",
+              "description"
+            ]
+          }
+        }
+      },
+      "required": [
+        "name",
+        "experiences"
+      ]
+    },
+    "education": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "experiences": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "title": {
+                "type": "string"
+              },
+              "date": {
+                "type": "string"
+              },
+              "place": {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "type": "string"
+                  },
+                  "url": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "name",
+                  "url"
+                ]
+              },
+              "icon": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "title",
+              "date",
+              "place",
+              "icon"
+            ]
+          }
+        }
+      },
+      "required": [
+        "name",
+        "experiences"
+      ]
+    },
+    "skills": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "items": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "name",
+        "items"
+      ]
+    },
+    "mainProjects": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "projects": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "thumbnail": {
+                "type": "string"
+              },
+              "url": {
+                "type": "string"
+              },
+              "date": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "skills": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "required": [
+              "name",
+              "thumbnail",
+              "url",
+              "date",
+              "description",
+              "skills"
+            ]
+          }
+        }
+      },
+      "required": [
+        "name",
+        "projects"
+      ]
+    },
+    "sideProjects": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "projects": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "thumbnail": {
+                "type": "string"
+              },
+              "url": {
+                "type": "string"
+              },
+              "date": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "skills": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "required": [
+              "name",
+              "thumbnail",
+              "url",
+              "date",
+              "description",
+              "skills"
+            ]
+          }
+        }
+      },
+      "required": [
+        "name",
+        "projects"
+      ]
+    },
+    "$schema": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "summary",
+    "work",
+    "education",
+    "skills",
+    "mainProjects",
+    "sideProjects"
+  ]
+}

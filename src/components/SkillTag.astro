@@ -1,0 +1,17 @@
+---
+import type { AstroComponentFactory } from "astro/runtime/server/index.js";
+
+const { label, icon: Icon } = Astro.props;
+
+interface Props {
+  label: string;
+  icon?: AstroComponentFactory;
+}
+---
+
+<div
+  class="inline-flex items-center gap-1.5 px-2 py-1 rounded-lg bg-stone-200/50 dark:bg-zinc-800"
+>
+  {Icon && <Icon />}
+  <span>{label}</span>
+</div>

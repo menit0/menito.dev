@@ -5,6 +5,6 @@ export type Experience = {
     name: string;
     url?: string;
   };
-  description: string;
+  description?: string;
   icon: string;
 };

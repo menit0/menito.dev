@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme inline {
+  --font-inter: var(--font-inter);
+  --font-dm-serif-display: var(--font-dm-serif-display);
+}
+
+:root {
+  font-family: var(--font-inter);
+  color: var(--color-stone-600);
+  background-color: var(--color-stone-50);
+}
+
+:root.dark {
+  color: var(--color-stone-300);
+  background-color: var(--color-zinc-900);
+}
+
+body {
+  margin: 0 auto;
+  padding: 2rem;
+  max-width: 730px;
+}
+
+h1,
+h2 {
+  font-family: var(--font-dm-serif-display);
+  color: var(--color-stone-800);
+}
+
+.dark h1,
+.dark h2 {
+  color: var(--color-stone-200);
+}

@@ -1,0 +1,18 @@
+---
+import ExperienceItem from "@components/ExperienceItem.astro";
+import type { Experience } from "src/types/Experience";
+
+const { data } = Astro.props;
+---
+
+<section>
+  <h2 class="text-2xl mt-8 mb-6">{data.name}</h2>
+
+  <div class="flex flex-col gap-5">
+    {
+      data.experiences.map((experience: Experience) => {
+        return <ExperienceItem experience={experience} />;
+      })
+    }
+  </div>
+</section>

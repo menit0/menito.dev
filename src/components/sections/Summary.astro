@@ -1,0 +1,57 @@
+---
+import SummaryButton from "../SummaryButton.astro";
+import CVIcon from "../icons/CVIcon.astro";
+import EmailIcon from "../icons/EmailIcon.astro";
+import LinkedInIcon from "../icons/LinkedInIcon.astro";
+import CodebergIcon from "../icons/CodebergIcon.astro";
+
+const { data } = Astro.props;
+
+const linkConfig = {
+  CV: {
+    icon: CVIcon,
+    colorClass:
+      "hover:bg-rose-100 hover:text-rose-700 hover:border-rose-200 hover:dark:text-rose-800 hover:dark:bg-rose-200 hover:dark:border-rose-300",
+  },
+  Email: {
+    icon: EmailIcon,
+    colorClass:
+      "hover:bg-violet-100 hover:text-violet-700 hover:border-violet-200",
+  },
+  LinkedIn: {
+    icon: LinkedInIcon,
+    colorClass: "hover:bg-blue-100 hover:text-blue-700 hover:border-blue-200",
+  },
+  Codeberg: {
+    icon: CodebergIcon,
+    colorClass:
+      "hover:bg-emerald-100 hover:text-emerald-700 hover:border-emerald-200",
+  },
+};
+---
+
+<section>
+  <h1 class="text-5xl mb-3">{data.name}</h1>
+  <p class="font-medium text-rose-600 dark:text-rose-400 mb-8">{data.title}</p>
+
+  <p class="leading-relaxed mb-8">
+    {data.description}
+  </p>
+
+  <div class="flex flex-wrap gap-3">
+    {
+      data.links.map((link: { label: string; url: string }) => {
+        const config = linkConfig[link.label as keyof typeof linkConfig];
+        const Icon = config.icon;
+        return (
+          <SummaryButton
+            href={link.url}
+            label={link.label}
+            colorClass={config.colorClass}
+            icon={Icon}
+          />
+        );
+      })
+    }
+  </div>
+</section>

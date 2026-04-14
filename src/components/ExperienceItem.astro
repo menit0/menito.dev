@@ -1,0 +1,46 @@
+---
+import type { Experience } from "src/types/Experience";
+import ArrowUpRightIcon from "./icons/ArrowUpRightIcon.astro";
+
+const { experience } = Astro.props;
+
+interface Props {
+  experience: Experience;
+}
+---
+
+<div class="flex flex-col gap-3">
+  <div class="flex justify-between items-start">
+    <div class="flex gap-4 items-center">
+      <img src={`../${experience.icon}`} class="rounded-lg" width="45" />
+      <div>
+        <h4 class="text-stone-800 dark:text-stone-200 font-medium">
+          {experience.title}
+        </h4>
+        {
+          experience.place.url ? (
+            <div class="inline-flex items-center group">
+              <a
+                class="text-stone-400 hover:text-stone-500 dark:text-stone-500 hover:dark:text-stone-400"
+                href={experience.place.url}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {experience.place.name}
+              </a>
+              <ArrowUpRightIcon class="h-4 w-4 opacity-0 transition-all duration-300 group-hover:opacity-100 text-stone-400 dark:text-stone-500" />
+            </div>
+          ) : (
+            <p class="text-stone-400 dark:text-stone-500">
+              {experience.place.name}
+            </p>
+          )
+        }
+      </div>
+    </div>
+    <span class="text-sm text-stone-400 dark:text-stone-500"
+      >{experience.date}</span
+    >
+  </div>
+  <p class="pl-15 leading-relaxed">{experience.description}</p>
+</div>

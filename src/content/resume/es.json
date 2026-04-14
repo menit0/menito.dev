@@ -1,0 +1,216 @@
+{
+  "summary": {
+    "name": "Guillermo Mena",
+    "title": "Desarrollador Frontend de Madrid, España",
+    "description": "Desarrollador con 5+ años de experiencia profesional, especializado en desarrollo frontend con React, JavaScript y TypeScript, y con experiencia previa en desarrollo de videojuegos y aplicaciones interactivas con Unity.\nTambién dedicado al desarrollo independiente de apps móviles con Flutter que ya superan las 370.000 descargas.",
+    "links": [
+      {
+        "label": "CV",
+        "url": "https://drive.proton.me/urls/JR2WYKJW1R#DCKpKistThfb"
+      },
+      {
+        "label": "Email",
+        "url": "mailto:guille.mena@protonmail.com"
+      },
+      {
+        "label": "LinkedIn",
+        "url": "https://linkedin.com/in/menito"
+      },
+      {
+        "label": "Codeberg",
+        "url": "https://codeberg.org/menito"
+      }
+    ]
+  },
+  "work": {
+    "name": "Experiencia Profesional",
+    "experiences": [
+      {
+        "title": "Desarrollador Frontend",
+        "date": "Jul 2024 - Actualidad",
+        "place": {
+          "name": "Sngular",
+          "url": "https://linkedin.com/company/sngular"
+        },
+        "icon": "sngular.webp",
+        "description": "Desarrollé funciones de pagos y componentes modulares para un back office de Inditex utilizando React, JavaScript, Sass y REST APIs. Utilicé Vitest y Cypress para realizar tests y así garantizar un alto rendimiento y fiabilidad de la plataforma."
+      },
+      {
+        "title": "Desarrollador Unity",
+        "date": "Jul 2022 - Jul 2024",
+        "place": {
+          "name": "Sngular",
+          "url": "https://linkedin.com/company/sngular"
+        },
+        "icon": "sngular.webp",
+        "description": "Lideré el desarrollo de experiencias VR e interactivas para museos, integrando Unity con WordPress para tener un contenido dinámico. Desarrollé herramientas personalizadas para mejorar el flujo de trabajo y realicé pruebas de rendimiento para garantizar la excelencia técnica y una alta usabilidad."
+      },
+      {
+        "title": "Desarrollador Unity",
+        "date": "Feb 2021 - Jul 2022",
+        "place": {
+          "name": "Freelance",
+          "url": ""
+        },
+        "icon": "freelance.webp",
+        "description": "Desarrollé aplicaciones interactivas personalizadas para diversos sectores, optimizando el rendimiento multiplataforma y los tiempos de carga. Integré Photon Engine para espacios sociales multijugador 3D y proporcioné soporte técnico tras cada entrega."
+      }
+    ]
+  },
+  "education": {
+    "name": "Educación",
+    "experiences": [
+      {
+        "title": "Grado en Diseño y Desarrollo de Videojuegos",
+        "date": "2014 - 2020",
+        "place": {
+          "name": "Universidad Rey Juan Carlos",
+          "url": "https://linkedin.com/school/universidad-rey-juan-carlos/"
+        },
+        "icon": "urjc.webp"
+      }
+    ]
+  },
+  "skills": {
+    "name": "Habilidades",
+    "items": [
+      "React",
+      "Astro",
+      "TypeScript",
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "Sass",
+      "Tailwind CSS",
+      "Redux",
+      "Zustand",
+      "Testing Library",
+      "Vitest",
+      "Jest",
+      "Cypress",
+      "Vite",
+      "Webpack",
+      "Supabase",
+      "Git",
+      "Jira",
+      "Flutter",
+      "Dart",
+      "Unity",
+      "C#"
+    ]
+  },
+  "mainProjects": {
+    "name": "Proyectos Principales",
+    "projects": [
+      {
+        "name": "Inditex Back Office",
+        "thumbnail": "project_inditex.webp",
+        "url": "https://inditex.com",
+        "date": "Jul 2024 - Present",
+        "description": "Trabajé en funciones front-end e interfaces destinadas a mejorar una plataforma interna de Inditex, utilizada para gestionar todos los pagos realizados en las tiendas online de Inditex en todo el mundo.",
+        "skills": [
+          "React",
+          "JavaScript",
+          "Redux",
+          "HTML",
+          "Sass",
+          "Vitest",
+          "Cypress"
+        ]
+      },
+      {
+        "name": "Real Madrid Museum",
+        "thumbnail": "project_realmadrid.webp",
+        "url": "https://realmadrid.com/sites/tour-bernabeu",
+        "date": "Apr 2023 - Jul 2024",
+        "description": "Desarrollé experiencias interactivas y de realidad virtual para el Museo oficial del Real Madrid. Mi trabajo también se centró en crear componentes reutilizables para agilizar el trabajo de desarrollo del equipo.",
+        "skills": ["Unity", "C#"]
+      },
+      {
+        "name": "Qatar Olympic and Sports Museum",
+        "thumbnail": "project_qatar.webp",
+        "url": "https://sngular.com/success-stories/11/faster-taller-stronger-and-more-innovative",
+        "date": "Feb 2021 - Oct 2022",
+        "description": "Programador principal de experiencias interactivas para el Museo Olímpico y Deportivo de Qatar. Esto incluyó minijuegos 3D, detección de movimiento con Kinect y paneles interactivos con pantallas táctiles.",
+        "skills": ["Unity", "C#"]
+      },
+      {
+        "name": "SABIC Digital Experience Center",
+        "thumbnail": "project_sabic.webp",
+        "url": "https://sabic.com/en",
+        "date": "Oct 2022 - Apr 2023",
+        "description": "Programador principal de interactivos multidispositivo para la sede central de SABIC, una empresa líder en la industria química, incluyendo mesas interactivas, pantallas táctiles y experiencias de realidad aumentada.",
+        "skills": ["Unity", "C#"]
+      },
+      {
+        "name": "Exhibify",
+        "thumbnail": "project_exhibify.webp",
+        "url": "https://exhibify.net",
+        "date": "Aug 2021 - Mar 2022",
+        "description": "Desarrollé una herramienta de creación de exposiciones virtuales para Exhibify, una plataforma que permite a los artistas crear exposiciones personalizadas para mostrar y vender su trabajo.",
+        "skills": ["Unity", "C#"]
+      },
+      {
+        "name": "Color Rush",
+        "thumbnail": "project_naolito.webp",
+        "url": "https://naolito.com",
+        "date": "May 2022 - Jul 2022",
+        "description": "Desarrollé un prototipo de juego móvil de tipo runner 2D encargado por Naolito Animation Studios, que incluía todas las mecánicas principales y un editor de niveles para facilitar la creación de nuevos niveles por parte del equipo de Naolito.",
+        "skills": ["Unity", "C#"]
+      },
+      {
+        "name": "Uttopion",
+        "thumbnail": "project_uttopion.webp",
+        "url": "https://uttopion.es",
+        "date": "Feb 2021 - Dec 2021",
+        "description": "Trabajé en la incorporación de funciones multijugador y actualizaciones de contenido para Uttopion, un metaverso virtual donde los usuarios pueden asistir a conciertos, fiestas y otros eventos en un entorno 3D.",
+        "skills": ["Unity", "C#", "Photon"]
+      },
+      {
+        "name": "TodoLibros3D",
+        "thumbnail": "project_todolibros3d.webp",
+        "url": "https://todolibros3d.com",
+        "date": "Feb 2022 - Mar 2022",
+        "description": "Añadí funciones multijugador a TodoLibros3D, una librería virtual en 3D donde ahora los usuarios podrían interactuar entre ellos creando sus propios avatares personalizados y mediante un chat de texto.",
+        "skills": ["Unity", "C#", "Photon"]
+      }
+    ]
+  },
+  "sideProjects": {
+    "name": "Side Projects",
+    "projects": [
+      {
+        "name": "WattLuz",
+        "thumbnail": "project_wattluz.webp",
+        "url": "https://play.google.com/store/apps/details?id=com.menito.precioluz",
+        "date": "2024",
+        "description": "Mobile app that allows you to see daily prices of electricity in Spain in real time to help you save on your electricity bills.",
+        "skills": ["Flutter", "Dart"]
+      },
+      {
+        "name": "Nanito Launcher",
+        "thumbnail": "project_nanitolauncher.webp",
+        "url": "https://play.google.com/store/apps/details?id=com.menito.minimallauncher",
+        "date": "2024",
+        "description": "Minimalist launcher for Android designed to reduce screen time and help you in your digital detox.",
+        "skills": ["Flutter", "Dart"]
+      },
+      {
+        "name": "Chupito",
+        "thumbnail": "project_chupito.webp",
+        "url": "https://play.google.com/store/apps/details?id=com.menito.appcohol",
+        "date": "2020",
+        "description": "Party games app with challenges and dares to liven up any party. Made with Unity in 2020 and migrated to Flutter in 2024 to add new features and improve performance.",
+        "skills": ["Flutter", "Dart"]
+      },
+      {
+        "name": "Pincho.io",
+        "thumbnail": "project_pinchoio.webp",
+        "url": "https://youtube.com/watch?v=eDQVwSZA6f0",
+        "date": "2019",
+        "description": "Mobile game inspired by Agar.io and launched in 2019, reaching +5,000 downloads. Currently unpublished due to maintenance constraints.",
+        "skills": ["Unity", "C#"]
+      }
+    ]
+  }
+}
