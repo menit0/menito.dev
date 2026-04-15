@@ -4,8 +4,41 @@ import CVIcon from "../icons/CVIcon.astro";
 import EmailIcon from "../icons/EmailIcon.astro";
 import LinkedInIcon from "../icons/LinkedInIcon.astro";
 import CodebergIcon from "../icons/CodebergIcon.astro";
+import ColoredText from "@components/ColoredText.astro";
 
 const { data } = Astro.props;
+
+const descriptionParts = data.description.split(/(\[.*?\])/g);
+
+const colorVariants = {
+  amber: {
+    bg: "bg-amber-200/50 dark:bg-amber-900/50",
+    text: "text-amber-900 dark:text-amber-300",
+  },
+  red: {
+    bg: "bg-red-200/40 dark:bg-red-900/50",
+    text: "text-red-900 dark:text-red-300",
+  },
+  blue: {
+    bg: "bg-blue-200/40 dark:bg-blue-900/50",
+    text: "text-blue-900 dark:text-blue-300",
+  },
+  rose: { bg: "bg-rose-100/50", text: "text-rose-900" },
+  emerald: {
+    bg: "bg-emerald-200/40 dark:bg-emerald-900/50",
+    text: "text-emerald-900 dark:text-emerald-300",
+  },
+  violet: {
+    bg: "bg-violet-200/40 dark:bg-violet-900/50",
+    text: "text-violet-900 dark:text-violet-300",
+  },
+  yellow: { bg: "bg-yellow-100/50", text: "text-yellow-900" },
+  orange: {
+    bg: "bg-orange-200/40 dark:bg-orange-900/50",
+    text: "text-orange-900 dark:text-orange-300",
+  },
+  default: { bg: "bg-gray-100/50", text: "text-gray-900" },
+};
 
 const linkConfig = {
   CV: {
@@ -34,8 +67,27 @@ const linkConfig = {
   <h1 class="text-5xl mb-3">{data.name}</h1>
   <p class="font-medium text-rose-600 dark:text-rose-400 mb-8">{data.title}</p>
 
-  <p class="leading-relaxed mb-8">
-    {data.description}
+  <p class="leading-relaxed whitespace-pre-line mb-8">
+    {
+      descriptionParts.map((part: string) => {
+        if (part.startsWith("[") && part.endsWith("]")) {
+          const content = part.slice(1, -1).split("|");
+          const text = content[0];
+          const colorKey = content[1] as keyof typeof colorVariants;
+
+          const theme = colorVariants[colorKey] || colorVariants.default;
+
+          return (
+            <ColoredText
+              text={text}
+              bgClass={theme.bg}
+              textClass={theme.text}
+            />
+          );
+        }
+        return part;
+      })
+    }
   </p>
 
   <div class="flex flex-wrap gap-3">
@@ -45,7 +97,7 @@ const linkConfig = {
         const Icon = config.icon;
         return (
           <SummaryButton
-            href={link.url}
+            url={link.url}
             label={link.label}
             colorClass={config.colorClass}
             icon={Icon}
