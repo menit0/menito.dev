@@ -10,13 +10,19 @@ interface Props {
 ---
 
 <div class="flex gap-4 items-start">
-  <img src={`../${experience.icon}`} class="rounded-lg shrink-0" width="45" />
+  <img
+    src={`../${experience.icon}`}
+    class="rounded-lg shrink-0"
+    alt={experience.place.name}
+    width="45"
+    height="45"
+  />
   <div class="flex-1">
     <div class="flex justify-between items-start mb-3">
       <div>
-        <h4 class="text-stone-800 dark:text-stone-200 font-medium">
+        <h3 class="text-stone-800 dark:text-stone-200 font-medium">
           {experience.title}
-        </h4>
+        </h3>
         {
           experience.place.url ? (
             <div class="inline-flex items-center group">
