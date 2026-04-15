@@ -24,13 +24,13 @@ interface Props {
     />
     <div class="flex flex-col">
       <div class="inline-flex gap-1 items-center">
-        <h4>{project.name}</h4>
+        <h4 class="dark:text-stone-200">{project.name}</h4>
         <ArrowUpRightIcon
           class="h-4 w-4 opacity-0 transition-all duration-300 group-hover:opacity-100 text-rose-400"
         />
       </div>
 
-      <small class="text-stone-400 dark:text-stone-500">{project.date}</small>
+      <small class="text-stone-400">{project.date}</small>
     </div>
     <p class="text-sm leading-relaxed">
       {
@@ -46,7 +46,7 @@ interface Props {
   <div class="flex flex-wrap gap-1">
     {
       project.skills?.map((skill) => (
-        <div class="text-xs">
+        <div class="text-xs text-stone-500 dark:text-stone-400">
           <SkillTag label={skill} />
         </div>
       ))
