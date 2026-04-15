@@ -1,8 +1,22 @@
 @import "tailwindcss";
-@import "@fontsource-variable/inter";
-@import "@fontsource/dm-serif-display";
 
 @custom-variant dark (&:where(.dark, .dark *));
+
+@font-face {
+  font-family: "Inter Variable";
+  src: url("/fonts/inter.woff2") format("woff2-variations");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DM Serif Display";
+  src: url("/fonts/dm-serif-display.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 
 @theme inline {
   --font-inter: "Inter Variable", sans-serif;
