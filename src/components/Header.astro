@@ -3,6 +3,10 @@ import LanguageSelector from "./LanguageSelector.astro";
 import ThemeSelector from "./ThemeSelector.astro";
 
 const { lang } = Astro.props;
+
+interface Props {
+  lang: string;
+}
 ---
 
 <header class="flex justify-between items-center mb-8">
