@@ -37,7 +37,7 @@
           "url": "https://linkedin.com/company/sngular"
         },
         "icon": "sngular.webp",
-        "description": "Desarrollé funciones de pagos y componentes modulares para un back office de Inditex utilizando React, JavaScript, Sass y REST APIs. Utilicé Vitest y Cypress para realizar tests y así garantizar un alto rendimiento y fiabilidad de la plataforma."
+        "description": "Desarrollé módulos de pago y componentes escalables para el ecosistema interno de Inditex utilizando React y JavaScript. Optimicé la integración de APIs REST, garantizando la estabilidad de la plataforma mediante una arquitectura de pruebas basada en Vitest y Cypress."
       },
       {
         "title": "Desarrollador Unity",
@@ -47,7 +47,7 @@
           "url": "https://linkedin.com/company/sngular"
         },
         "icon": "sngular.webp",
-        "description": "Lideré el desarrollo de experiencias VR e interactivas para museos, integrando Unity con WordPress para tener un contenido dinámico. Desarrollé herramientas personalizadas para mejorar el flujo de trabajo y realicé pruebas de rendimiento para garantizar la excelencia técnica y una alta usabilidad."
+        "description": "Lideré el desarrollo de instalaciones interactivas y experiencias VR para museos, integrando Unity con plataformas WordPress para la gestión dinámica de datos. Desarrollé herramientas internas y componentes reutilizables para automatizar flujos de trabajo y optimizar los tiempos de desarrollo."
       },
       {
         "title": "Desarrollador Unity",
@@ -57,7 +57,7 @@
           "url": ""
         },
         "icon": "freelance.webp",
-        "description": "Desarrollé aplicaciones interactivas personalizadas para diversos sectores, optimizando el rendimiento multiplataforma y los tiempos de carga. Integré Photon Engine para espacios sociales multijugador 3D y proporcioné soporte técnico tras cada entrega."
+        "description": "Desarrollé aplicaciones interactivas a medida para clientes corporativos de diversos sectores, especializándome en aplicaciones multiplataforma. Implementé espacios sociales multijugador en tiempo real utilizando Photon Engine y proporcioné soporte técnico y mantenimiento post-entrega."
       }
     ]
   },

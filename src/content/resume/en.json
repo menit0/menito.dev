@@ -37,7 +37,7 @@
           "url": "https://linkedin.com/company/sngular"
         },
         "icon": "sngular.webp",
-        "description": "Developed payment features and modular UI components for an Inditex back office using React, JavaScript, Sass and REST APIs. Leveraged Vitest and Cypress for testing to ensure high performance and platform reliability."
+        "description": "Engineered payment modules and scalable UI components for Inditex's internal ecosystem using React and JavaScript. Optimized the integration of REST APIs while ensuring platform stability through a testing architecture based on Vitest and Cypress."
       },
       {
         "title": "Unity Developer",
@@ -47,7 +47,7 @@
           "url": "https://linkedin.com/company/sngular"
         },
         "icon": "sngular.webp",
-        "description": "Led development of VR and interactive museum experiences, integrating Unity with WordPress for dynamic content. Built custom workflow tools and conducted performance profiling to ensure technical excellence and high usability."
+        "description": "Led the development of immersive VR and interactive museum installations, integrating Unity with headless WordPress architectures for dynamic data management. Built internal tools and reusable components to automate workflows and streamline development."
       },
       {
         "title": "Unity Developer",
@@ -57,7 +57,7 @@
           "url": ""
         },
         "icon": "freelance.webp",
-        "description": "Developed tailored interactive applications for diverse industries, optimizing multiplatform performance and loading times. Integrated Photon Engine for 3D multiplayer social spaces and provided post-delivery technical support and tuning."
+        "description": "Delivered interactive applications for enterprise clients across various sectors, specializing in high-performance multiplatform applications. Engineered real-time multiplayer social spaces using Photon Engine and provided post-delivery thecnical support and maintenance."
       }
     ]
   },
@@ -135,7 +135,7 @@
         "thumbnail": "project_qatar.webp",
         "url": "https://sngular.com/success-stories/11/faster-taller-stronger-and-more-innovative",
         "date": "Feb 2021 - Oct 2022",
-        "description": "Main programmer of interactives for the Qatar Olympic and Sports Museum, including 3D minigames, motion detection with Kinect and information touch panels.",
+        "description": "Main programmer of interactive experiences for the Qatar Olympic and Sports Museum. This included 3D minigames, motion detection with Kinect and interactive panels with touchscreens.",
         "skills": ["Unity", "C#"]
       },
       {
@@ -143,7 +143,7 @@
         "thumbnail": "project_sabic.webp",
         "url": "https://sabic.com/en",
         "date": "Oct 2022 - Apr 2023",
-        "description": "Main programmer of multi-device interactives for the main headquarters of SABIC, the largest company in the Middle East.",
+        "description": "Main programmer of multi-device interactives for the headquarters of SABIC, a leading chemical company, including interactive tables, touch screens and AR experiences.",
         "skills": ["Unity", "C#"]
       },
       {
@@ -151,7 +151,7 @@
         "thumbnail": "project_exhibify.webp",
         "url": "https://exhibify.net",
         "date": "Aug 2021 - Mar 2022",
-        "description": "Developed a tool to easily create virtual art exhibitions, used by artists and art galleries to exhibit or sell their work. A project commissioned by ITGallery Software.",
+        "description": "I developed a virtual exhibition creation tool for Exhibify, a platform that allows artists to create custom exhibitions to showcase and sell their works.",
         "skills": ["Unity", "C#"]
       },
       {
@@ -159,7 +159,7 @@
         "thumbnail": "project_naolito.webp",
         "url": "https://naolito.com",
         "date": "May 2022 - Jul 2022",
-        "description": "A 2D runner game commissioned by Naolito Animation Studios. Worked on a playable prototype, including all main mechanics and a level editor.",
+        "description": "I developed a prototype 2D runner mobile game commissioned by Naolito Animation Studios, which included all the main mechanics and a level editor to facilitate the creation of new levels by the Naolito team.",
         "skills": ["Unity", "C#"]
       },
       {
@@ -167,7 +167,7 @@
         "thumbnail": "project_uttopion.webp",
         "url": "https://uttopion.es",
         "date": "Feb 2021 - Dec 2021",
-        "description": "Worked on adding multiplayer features and content updates for Uttopion, a metaverse where users can attend online events organized by real artists.",
+        "description": "I worked on incorporating multiplayer features and content updates for Uttopion, a metaverse where users can attend concerts, parties and other events in a 3D environment.",
         "skills": ["Unity", "C#", "Photon"]
       },
       {
@@ -175,7 +175,7 @@
         "thumbnail": "project_todolibros3d.webp",
         "url": "https://todolibros3d.com",
         "date": "Feb 2022 - Mar 2022",
-        "description": "Added multiplayer functionality to TodoLibros3D, a virtual bookstore where now users could create their own custom avatar, interact with other users and create their own private rooms to invite their friends.",
+        "description": "I added multiplayer features to TodoLibros3D, a virtual library where users could now interact with each other in real time by creating their own custom avatars and via text chat.",
         "skills": ["Unity", "C#", "Photon"]
       }
     ]
