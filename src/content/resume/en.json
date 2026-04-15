@@ -6,7 +6,7 @@
   "summary": {
     "name": "Guillermo Mena",
     "title": "Frontend Developer from Madrid, Spain",
-    "description": "Developer with 5+ years of professional experience, specializing in frontend development with React, JavaScript and TypeScript, and with previous experience in game and interactive application development with Unity.\nI'm also dedicated to independent development of mobile applications with Flutter, now exceeding 370,000 downloads.",
+    "description": "Developer with [5+ years of experience|violet], specializing for the past two years in [frontend|orange] development with [React|red], [JavaScript|amber] and [TypeScript|emerald], and with previous experience in game engineering with Unity.\nI also apply my expertise to indie projects, where I've scaled my own [Flutter|blue] apps to 370,000+ downloads while experimenting with a broad range of other technologies.",
     "links": [
       {
         "label": "CV",
@@ -188,7 +188,7 @@
         "thumbnail": "project_wattluz.webp",
         "url": "https://play.google.com/store/apps/details?id=com.menito.precioluz",
         "date": "2024",
-        "description": "Mobile app that allows you to see daily prices of electricity in Spain in real time to help you save on your electricity bills.",
+        "description": "Mobile app to check the electricity price in Spain in real time, with interactive graphs and customizable notifications to help you save on your electricity bill.",
         "skills": ["Flutter", "Dart"]
       },
       {
@@ -196,7 +196,7 @@
         "thumbnail": "project_nanitolauncher.webp",
         "url": "https://play.google.com/store/apps/details?id=com.menito.minimallauncher",
         "date": "2024",
-        "description": "Minimalist launcher for Android designed to reduce screen time and help you in your digital detox.",
+        "description": "Minimalist launcher for Android that offers a distraction-free user experience, with a clean design and a customizable interface",
         "skills": ["Flutter", "Dart"]
       },
       {
@@ -204,7 +204,7 @@
         "thumbnail": "project_chupito.webp",
         "url": "https://play.google.com/store/apps/details?id=com.menito.appcohol",
         "date": "2020",
-        "description": "Party games app with challenges and dares to liven up any party. Made with Unity in 2020 and migrated to Flutter in 2024 to add new features and improve performance.",
+        "description": "Mobile app that includes challenges and questions to liven up any party. With over 370,000 downloads, it has become one of the most popular apps in its category in several countries.",
         "skills": ["Flutter", "Dart"]
       },
       {
@@ -212,7 +212,7 @@
         "thumbnail": "project_pinchoio.webp",
         "url": "https://youtube.com/watch?v=eDQVwSZA6f0",
         "date": "2019",
-        "description": "Mobile game inspired by Agar.io and launched in 2019, reaching +5,000 downloads. Currently unpublished due to maintenance constraints.",
+        "description": "Mobile game inspired by Agar.io, where players must attack others to grow and be the biggest in the game. The game reached +5,000 downloads on Google Play, but is currently no longer available.",
         "skills": ["Unity", "C#"]
       }
     ]

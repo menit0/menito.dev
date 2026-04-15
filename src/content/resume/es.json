@@ -1,8 +1,12 @@
 {
+  "metadata": {
+    "title": "Guillermo Mena | Desarrollador Frontend",
+    "description": "Desarrollador con 5+ años de experiencia profesional, especializado en desarrollo frontend con React, JavaScript y TypeScript."
+  },
   "summary": {
     "name": "Guillermo Mena",
     "title": "Desarrollador Frontend de Madrid, España",
-    "description": "Desarrollador con 5+ años de experiencia profesional, especializado en desarrollo frontend con React, JavaScript y TypeScript, y con experiencia previa en desarrollo de videojuegos y aplicaciones interactivas con Unity.\nTambién dedicado al desarrollo independiente de apps móviles con Flutter que ya superan las 370.000 descargas.",
+    "description": "Desarrollador con [5+ años de experiencia|violet], especializado los últimos dos años en desarrollo [frontend|orange] con [React|red], [JavaScript|amber] y [TypeScript|emerald], y con una trayectoria previa en ingeniería de videojuegos con Unity.\nTambién aplico mi experiencia en proyectos personales, donde he escalado mis propias apps en [Flutter|blue] hasta superar las 370.000 descargas a la vez que exploro nuevas tecnologías.",
     "links": [
       {
         "label": "CV",
@@ -177,14 +181,14 @@
     ]
   },
   "sideProjects": {
-    "name": "Side Projects",
+    "name": "Proyectos Personales",
     "projects": [
       {
         "name": "WattLuz",
         "thumbnail": "project_wattluz.webp",
         "url": "https://play.google.com/store/apps/details?id=com.menito.precioluz",
         "date": "2024",
-        "description": "Mobile app that allows you to see daily prices of electricity in Spain in real time to help you save on your electricity bills.",
+        "description": "Aplicación móvil para consultar el precio de la luz en España, con gráficos interactivos y notificaciones personalizables para ayudarte a ahorrar en tu factura de la electricidad.",
         "skills": ["Flutter", "Dart"]
       },
       {
@@ -192,7 +196,7 @@
         "thumbnail": "project_nanitolauncher.webp",
         "url": "https://play.google.com/store/apps/details?id=com.menito.minimallauncher",
         "date": "2024",
-        "description": "Minimalist launcher for Android designed to reduce screen time and help you in your digital detox.",
+        "description": "Launcher minimalista para Android que ofrece una experiencia sin distracciones para mejorar la productividad, con un diseño limpio y una interfaz personalizable.",
         "skills": ["Flutter", "Dart"]
       },
       {
@@ -200,7 +204,7 @@
         "thumbnail": "project_chupito.webp",
         "url": "https://play.google.com/store/apps/details?id=com.menito.appcohol",
         "date": "2020",
-        "description": "Party games app with challenges and dares to liven up any party. Made with Unity in 2020 and migrated to Flutter in 2024 to add new features and improve performance.",
+        "description": "Aplicación móvil que incluye retos y preguntas para animar cualquier fiesta. Con más de 370.000 descargas, se ha convertido en una de las apps más populares en su categoría en varios países.",
         "skills": ["Flutter", "Dart"]
       },
       {
@@ -208,7 +212,7 @@
         "thumbnail": "project_pinchoio.webp",
         "url": "https://youtube.com/watch?v=eDQVwSZA6f0",
         "date": "2019",
-        "description": "Mobile game inspired by Agar.io and launched in 2019, reaching +5,000 downloads. Currently unpublished due to maintenance constraints.",
+        "description": "Juego móvil inspirado en Agar.io, donde los jugadores deben atacar a otros para crecer y ser el más grande de la partida. El juego alcanzó +5.000 descargas en Google Play, pero actualmente ya no está disponible.",
         "skills": ["Unity", "C#"]
       }
     ]

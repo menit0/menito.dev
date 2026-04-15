@@ -1,0 +1,17 @@
+---
+const { text, bgClass, textClass } = Astro.props;
+
+interface Props {
+  text: string;
+  bgClass: string;
+  textClass: string;
+}
+---
+
+<span class="relative inline-block group px-1">
+  <span class={`absolute inset-0 -skew-y-2 rounded opacity-70 ${bgClass}`}
+  ></span>
+  <span class={`relative font-medium ${textClass}`}>
+    {text}
+  </span>
+</span>
