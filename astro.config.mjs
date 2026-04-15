@@ -7,19 +7,10 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
+    build: {
+      assetsInlineLimit: 6144,
+    },
   },
-  fonts: [
-    {
-      provider: fontProviders.fontsource(),
-      name: "DM Serif Display",
-      cssVariable: "--font-dm-serif-display",
-    },
-    {
-      provider: fontProviders.fontsource(),
-      name: "Inter",
-      cssVariable: "--font-inter",
-    },
-  ],
   i18n: {
     defaultLocale: "en",
     locales: ["en", "es"],
