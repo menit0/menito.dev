@@ -32,7 +32,7 @@ interface Props {
         />
       </div>
 
-      <small class="text-stone-400">{project.date}</small>
+      <small class="text-stone-500">{project.date}</small>
     </div>
     <p class="text-sm leading-relaxed">
       {
@@ -48,7 +48,7 @@ interface Props {
   <div class="flex flex-wrap gap-1">
     {
       project.skills?.map((skill) => (
-        <div class="text-xs text-stone-500 dark:text-stone-400">
+        <div class="text-xs  dark:text-stone-400">
           <SkillTag label={skill} />
         </div>
       ))
