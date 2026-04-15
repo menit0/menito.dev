@@ -1,10 +1,12 @@
 @import "tailwindcss";
+@import "@fontsource-variable/inter";
+@import "@fontsource/dm-serif-display";
 
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme inline {
-  --font-inter: var(--font-inter);
-  --font-dm-serif-display: var(--font-dm-serif-display);
+  --font-inter: "Inter Variable", sans-serif;
+  --font-dm-serif-display: "DM Serif Display", serif;
 }
 
 :root {
