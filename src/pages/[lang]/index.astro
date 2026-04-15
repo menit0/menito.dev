@@ -5,6 +5,7 @@ import Experience from "@components/sections/Experience.astro";
 import { getEntry } from "astro:content";
 import Skills from "@components/sections/Skills.astro";
 import Projects from "@components/sections/Projects.astro";
+import type { Metadata } from "src/types/Metadata";
 
 export function getStaticPaths() {
   return [{ params: { lang: "es" } }];
@@ -13,16 +14,14 @@ export function getStaticPaths() {
 const { lang } = Astro.params;
 
 const entry = await getEntry("resume", lang);
-if (!entry) return Astro.redirect("/404");
-
-const content = entry.data;
+const content = entry?.data;
 ---
 
-<Layout lang={lang}>
-  <Summary data={content.summary} />
-  <Experience data={content.work} />
-  <Experience data={content.education} />
-  <Skills data={content.skills} />
-  <Projects data={content.mainProjects} />
-  <Projects data={content.sideProjects} />
+<Layout lang={lang} metadata={content?.metadata as Metadata}>
+  <Summary data={content?.summary} />
+  <Experience data={content?.work} />
+  <Experience data={content?.education} />
+  <Skills data={content?.skills} />
+  <Projects data={content?.mainProjects} />
+  <Projects data={content?.sideProjects} />
 </Layout>

@@ -2,6 +2,21 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "type": "object",
   "properties": {
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "title",
+        "description"
+      ]
+    },
     "summary": {
       "type": "object",
       "properties": {
@@ -265,6 +280,7 @@
     }
   },
   "required": [
+    "metadata",
     "summary",
     "work",
     "education",

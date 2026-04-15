@@ -2,9 +2,27 @@ import { z } from "astro/zod";
 import { glob } from "astro/loaders";
 import { defineCollection } from "astro/content/config";
 
+const projectsSchema = z.object({
+  name: z.string(),
+  projects: z.array(
+    z.object({
+      name: z.string(),
+      thumbnail: z.string(),
+      url: z.string(),
+      date: z.string(),
+      description: z.string(),
+      skills: z.array(z.string()),
+    }),
+  ),
+});
+
 const resumeCollection = defineCollection({
   loader: glob({ pattern: "**/*.json", base: "./src/content/resume" }),
   schema: z.object({
+    metadata: z.object({
+      title: z.string(),
+      description: z.string(),
+    }),
     summary: z.object({
       name: z.string(),
       title: z.string(),
@@ -49,32 +67,8 @@ const resumeCollection = defineCollection({
       name: z.string(),
       items: z.array(z.string()),
     }),
-    mainProjects: z.object({
-      name: z.string(),
-      projects: z.array(
-        z.object({
-          name: z.string(),
-          thumbnail: z.string(),
-          url: z.string(),
-          date: z.string(),
-          description: z.string(),
-          skills: z.array(z.string()),
-        }),
-      ),
-    }),
-    sideProjects: z.object({
-      name: z.string(),
-      projects: z.array(
-        z.object({
-          name: z.string(),
-          thumbnail: z.string(),
-          url: z.string(),
-          date: z.string(),
-          description: z.string(),
-          skills: z.array(z.string()),
-        }),
-      ),
-    }),
+    mainProjects: projectsSchema,
+    sideProjects: projectsSchema,
   }),
 });
 

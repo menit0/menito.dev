@@ -5,13 +5,14 @@ import Experience from "@components/sections/Experience.astro";
 import { getEntry } from "astro:content";
 import Skills from "@components/sections/Skills.astro";
 import Projects from "@components/sections/Projects.astro";
+import type { Metadata } from "src/types/Metadata";
 
 const entry = await getEntry("resume", "en");
 
 const content = entry?.data;
 ---
 
-<Layout lang="en">
+<Layout lang="en" metadata={content?.metadata as Metadata}>
   <Summary data={content?.summary} />
   <Experience data={content?.work} />
   <Experience data={content?.education} />
