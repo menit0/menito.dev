@@ -37,11 +37,15 @@ interface Props {
               <ArrowUpRightIcon class="h-4 w-4 opacity-0 transition-all duration-300 group-hover:opacity-100 text-stone-600 dark:text-stone-300" />
             </div>
           ) : (
-            <p class="text-stone-500">{experience.place.name}</p>
+            <p class="text-stone-500 dark:text-stone-400">
+              {experience.place.name}
+            </p>
           )
         }
       </div>
-      <span class="text-sm text-stone-500">{experience.date}</span>
+      <span class="text-sm text-stone-500 dark:text-stone-400"
+        >{experience.date}</span
+      >
     </div>
 
     <p class="leading-relaxed">{experience.description}</p>
