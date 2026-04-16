@@ -196,7 +196,7 @@
         "thumbnail": "project_nanitolauncher.webp",
         "url": "https://play.google.com/store/apps/details?id=com.menito.minimallauncher",
         "date": "2024",
-        "description": "Minimalist launcher for Android that offers a distraction-free user experience, with a clean design and a customizable interface",
+        "description": "Minimalist launcher for Android that offers a distraction-free user experience, with a clean design and a customizable interface.",
         "skills": ["Flutter", "Dart"]
       },
       {
