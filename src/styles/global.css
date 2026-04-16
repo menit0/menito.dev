@@ -18,9 +18,24 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Inter Fallback";
+  src: local("Arial");
+  size-adjust: 107%;
+  ascent-override: 90%;
+  descent-override: 22%;
+  line-gap-override: 0%;
+}
+
+@font-face {
+  font-family: "DM Serif Display Fallback";
+  src: local("Times New Roman");
+}
+
 @theme inline {
-  --font-inter: "Inter Variable", sans-serif;
-  --font-dm-serif-display: "DM Serif Display", serif;
+  --font-inter: "Inter Variable", "Inter Fallback", sans-serif;
+  --font-dm-serif-display:
+    "DM Serif Display", "DM Serif Display Fallback", serif;
 }
 
 :root {
