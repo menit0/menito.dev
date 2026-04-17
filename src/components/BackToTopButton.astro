@@ -1,0 +1,33 @@
+---
+import ArrowUpIcon from "./icons/ArrowUpIcon.astro";
+---
+
+<div class="fixed inset-0 pointer-events-none">
+  <div class="max-w-[730px] mx-auto h-full relative">
+    <button
+      id="back-to-top"
+      class="invisible opacity-0 transition-all duration-300 pointer-events-auto absolute bottom-8 left-[calc(100%+1rem)] rounded-full border border-stone-300 text-stone-400 hover:text-rose-600 dark:border-zinc-600 p-3 hidden lg:block"
+      aria-label="Back to top"
+    >
+      <ArrowUpIcon class="w-5 h-5" />
+    </button>
+  </div>
+</div>
+
+<script>
+  const btn = document.getElementById("back-to-top");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+      btn?.classList.remove("invisible", "opacity-0");
+      btn?.classList.add("visible", "opacity-100");
+    } else {
+      btn?.classList.remove("visible", "opacity-100");
+      btn?.classList.add("invisible", "opacity-0");
+    }
+  });
+
+  btn?.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+</script>
