@@ -1,4 +1,4 @@
-export type Experience = {
+export interface Experience {
   title: string;
   date: string;
   place: {
@@ -7,4 +7,4 @@ export type Experience = {
   };
   description?: string;
   icon: string;
-};
+}

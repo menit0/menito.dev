@@ -5,7 +5,7 @@ import Experience from "@components/sections/Experience.astro";
 import { getEntry } from "astro:content";
 import Skills from "@components/sections/Skills.astro";
 import Projects from "@components/sections/Projects.astro";
-import type { Metadata } from "src/types/Metadata";
+import type { Metadata } from "src/interfaces/Metadata";
 
 export function getStaticPaths() {
   return [{ params: { lang: "es" } }];

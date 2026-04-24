@@ -1,4 +1,4 @@
-export type Metadata = {
+export interface Metadata {
   title: string;
   description: string;
-};
+}
