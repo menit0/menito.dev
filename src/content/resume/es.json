@@ -186,6 +186,14 @@
     "name": "Proyectos Personales",
     "projects": [
       {
+        "name": "GameResources.dev",
+        "thumbnail": "project_gameresources.webp",
+        "url": "https://gameresources.dev",
+        "date": "2026",
+        "description": "Un directorio de herramientas y recursos útiles para cada campo que envuelve el desarrollo de videojuegos, incluyendo código, 3D assets, marketing o sonido.",
+        "skills": ["Astro", "TypeScript", "HTML", "CSS"]
+      },
+      {
         "name": "WattLuz",
         "thumbnail": "project_wattluz.webp",
         "url": "https://play.google.com/store/apps/details?id=com.menito.precioluz",
