@@ -79,9 +79,11 @@
     "name": "Skills",
     "items": [
       "React",
-      "Astro",
       "TypeScript",
       "JavaScript",
+      "Next.js",
+      "Angular",
+      "Astro",
       "HTML",
       "CSS",
       "Sass",
