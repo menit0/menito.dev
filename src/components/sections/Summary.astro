@@ -3,8 +3,8 @@ import SummaryButton from "../SummaryButton.astro";
 import CVIcon from "../icons/CVIcon.astro";
 import EmailIcon from "../icons/EmailIcon.astro";
 import LinkedInIcon from "../icons/LinkedInIcon.astro";
-import CodebergIcon from "../icons/CodebergIcon.astro";
 import ColoredText from "@components/ColoredText.astro";
+import GitHubIcon from "@components/icons/GitHubIcon.astro";
 
 const { data } = Astro.props;
 
@@ -54,8 +54,8 @@ const linkConfig = {
     colorClass:
       "hover:bg-blue-100 hover:text-blue-700 hover:border-blue-200 hover:dark:text-blue-100 hover:dark:bg-blue-500/50 hover:dark:border-blue-400/50",
   },
-  Codeberg: {
-    icon: CodebergIcon,
+  GitHub: {
+    icon: GitHubIcon,
     colorClass:
       "hover:bg-emerald-100 hover:text-emerald-700 hover:border-emerald-200 hover:dark:text-emerald-100 hover:dark:bg-emerald-500/50 hover:dark:border-emerald-400/50",
   },
@@ -67,42 +67,34 @@ const linkConfig = {
   <p class="font-medium text-rose-700 dark:text-rose-400 mb-8">{data.title}</p>
 
   <p class="leading-relaxed whitespace-pre-line mb-8">
-    {
-      descriptionParts.map((part: string) => {
-        if (part.startsWith("[") && part.endsWith("]")) {
-          const content = part.slice(1, -1).split("|");
-          const text = content[0];
-          const colorKey = content[1] as keyof typeof colorVariants;
+    {descriptionParts.map((part: string) => {
+      if (part.startsWith("[") && part.endsWith("]")) {
+        const content = part.slice(1, -1).split("|");
+        const text = content[0];
+        const colorKey = content[1] as keyof typeof colorVariants;
 
-          const theme = colorVariants[colorKey] || colorVariants.default;
+        const theme = colorVariants[colorKey] || colorVariants.default;
 
-          return (
-            <ColoredText
-              text={text}
-              bgClass={theme.bg}
-              textClass={theme.text}
-            />
-          );
-        }
-        return part;
-      })
-    }
+        return (
+          <ColoredText text={text} bgClass={theme.bg} textClass={theme.text} />
+        );
+      }
+      return part;
+    })}
   </p>
 
   <div class="flex flex-wrap gap-3">
-    {
-      data.links.map((link: { label: string; url: string }) => {
-        const config = linkConfig[link.label as keyof typeof linkConfig];
-        const Icon = config.icon;
-        return (
-          <SummaryButton
-            url={link.url}
-            label={link.label}
-            colorClass={config.colorClass}
-            icon={Icon}
-          />
-        );
-      })
-    }
+    {data.links.map((link: { label: string; url: string }) => {
+      const config = linkConfig[link.label as keyof typeof linkConfig];
+      const Icon = config.icon;
+      return (
+        <SummaryButton
+          url={link.url}
+          label={link.label}
+          colorClass={config.colorClass}
+          icon={Icon}
+        />
+      );
+    })}
   </div>
 </section>

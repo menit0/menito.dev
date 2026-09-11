@@ -1,12 +1,10 @@
 ---
-import CodebergIcon from "./icons/CodebergIcon.astro";
 import EmailIcon from "./icons/EmailIcon.astro";
+import GitHubIcon from "./icons/GitHubIcon.astro";
 import LinkedInIcon from "./icons/LinkedInIcon.astro";
 ---
 
-<footer
-  class="flex justify-end gap-5 border-t border-stone-200 dark:border-zinc-600/50 py-4 mt-8"
->
+<footer class="flex justify-end gap-5 border-t border-stone-200 dark:border-zinc-600/50 py-4 mt-8">
   <a
     href="mailto:guille.mena@protonmail.com"
     target="_blank"
@@ -26,12 +24,12 @@ import LinkedInIcon from "./icons/LinkedInIcon.astro";
     <LinkedInIcon className="w-4 h-4" />
   </a>
   <a
-    href="https://codeberg.org/menito"
+    href="https://github.com/menit0"
     target="_blank"
     rel="noopener noreferrer"
     class="text-stone-500 hover:text-stone-600 dark:text-stone-400 hover:dark:text-stone-300"
     aria-label="Codeberg"
   >
-    <CodebergIcon className="w-4 h-4" />
+    <GitHubIcon className="w-4 h-4" />
   </a>
 </footer>
